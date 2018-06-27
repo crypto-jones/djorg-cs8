@@ -19,6 +19,8 @@ class PersonalBookmarkSerializer(serializers.HyperlinkedModelSerializer):
         fields = ('title', 'content')
 
     def create(self, validated_data):
+        # import pdb
+        # pdb.set_trace()
         user = self.context['request'].user
         personal_bookmark = PersonalBookmark.objects.create(
             user=user, **validated_data)
