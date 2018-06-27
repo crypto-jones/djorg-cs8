@@ -10,7 +10,7 @@ class NoteSerializer(serializers.HyperlinkedModelSerializer):
         fields = ('title', 'content')
 
 
-class NoteViewset(viewsets.ModelViewSet):
+class NoteViewSet(viewsets.ModelViewSet):
     serializer_class = NoteSerializer
     queryset = Note.objects.all()
 
@@ -29,7 +29,7 @@ class PersonalNoteSerializer(serializers.HyperlinkedModelSerializer):
         return personal_note
 
 
-class PersonalNoteViewset(viewsets.ModelViewSet):
+class PersonalNoteViewSet(viewsets.ModelViewSet):
     serializer_class = PersonalNoteSerializer
     queryset = PersonalNote.objects.none()
 
