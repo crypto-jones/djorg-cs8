@@ -1,1 +1,1 @@
-web: gunicorn django-cs8.wsgi
+web: gunicorn gettingstarted.wsgi --log-file -
