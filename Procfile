@@ -1,1 +1,1 @@
-web: gunicorn djorg-cs8.wsgi
+web: gunicorn django-app-jeremyjones.wsgi
