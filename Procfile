@@ -1,1 +1,1 @@
-web: gunicorn djorg-cs8.wsgi --log-file -
+web: gunicorn djorg.wsgi --log-file -
